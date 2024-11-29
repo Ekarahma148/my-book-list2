@@ -1,0 +1,418 @@
+
+[
+  {
+    "id": 1,
+    "judul": "Bulan",
+    "image": "https://th.bing.com/th/id/OIP.sC7lVRS90tCQo2leAHBXHAHaK_?w=125&h=186&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2015,
+    "Halaman": 396,
+    "jenis": "fiksi",
+    "sinopsis": "Kelanjutan petualangan Raib, Seli, dan Ali dalam dunia paralel. Mereka menghadapi tantangan baru di Klan Matahari dengan teka-teki yang harus dipecahkan untuk menyelamatkan dunia mereka."
+  },
+  {
+    "id": 2,
+    "judul": "Hujan",
+    "image": "https://th.bing.com/th/id/OIP.v00Ntath9xZrCvrmONtblwHaK-?w=186&h=276&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2016,
+    "Halaman": 320,
+    "jenis": "fiksi",
+    "sinopsis": "Kisah tentang cinta, kehilangan, dan harapan dalam latar masa depan pasca-bencana yang penuh dengan refleksi emosional."
+  },
+  {
+    "id": 3,
+    "judul": "Pulang",
+    "image": "https://th.bing.com/th/id/OIP.5iRLxLW6m2oMFjJ2eTLR8gHaLn?w=186&h=293&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2015,
+    "Halaman": 400,
+    "jenis": "fiksi",
+    "sinopsis": "Bujang, seorang anak yang tumbuh dalam dunia mafia, menghadapi dilema moral dan pencarian arti pulang yang sesungguhnya."
+  },
+  {
+    "id": 4,
+    "judul": "Pergi",
+    "image": "https://th.bing.com/th/id/OIP.Lr_8UC3pG_3ApFpvMb1j4gHaLP?w=186&h=283&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2018,
+    "Halaman": 420,
+    "jenis": "fiksi",
+    "sinopsis": "Lanjutan perjalanan Bujang dalam melawan musuh baru yang mengancam keluarganya dan menemukan kedamaian dalam dirinya sendiri."
+  },
+  {
+    "id": 5,
+    "judul": "Bumi",
+    "image": "https://th.bing.com/th/id/OIP.-evealEHjqsYVlWN7fv82AHaK-?rs=1&pid=ImgDetMain",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2014,
+    "Halaman": 440,
+    "jenis": "fiksi",
+    "sinopsis": "Awal petualangan Raib, Seli, dan Ali menjelajahi dunia paralel yang penuh dengan misteri, sihir, dan tantangan yang menguji persahabatan mereka."
+  },
+  {
+    "id": 6,
+    "judul": "Matahari",
+    "image": "https://th.bing.com/th/id/OIP.D67lPDW_xSs7EMV1qykdXQHaK-?w=186&h=276&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2016,
+    "Halaman": 360,
+    "jenis": "fiksi",
+    "sinopsis": "Petualangan di Klan Matahari membawa Raib, Seli, dan Ali pada rahasia besar yang memengaruhi keberlangsungan dunia paralel mereka."
+  },
+  {
+    "id": 7,
+    "judul": "Komet",
+    "image": "https://th.bing.com/th/id/OIP.lcUpIkckZKlgPI8mor5o3QHaK-?w=186&h=276&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2018,
+    "Halaman": 450,
+    "jenis": "fiksi",
+    "sinopsis": "Rahasia besar tentang Klan Komet membuka babak baru dalam petualangan Raib dan kawan-kawan dengan musuh yang lebih berbahaya."
+  },
+  {
+    "id": 8,
+    "judul": "Ceros dan Batozar",
+    "image": "https://th.bing.com/th/id/OIP.i4Cxvv1Ykcp5LK-OW2qPGgAAAA?w=186&h=276&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2019,
+    "Halaman": 350,
+    "jenis": "fiksi",
+    "sinopsis": "Cerita mendebarkan tentang dua tokoh kuat, Ceros dan Batozar, yang membantu Raib, Seli, dan Ali dalam pertempuran melawan kegelapan."
+  },
+  {
+    "id": 9,
+    "judul": "Komet Minor",
+    "image": "https://th.bing.com/th/id/OIP.QhpLKRUYtEJXqI9wSfgwtgHaK2?w=186&h=273&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2019,
+    "Halaman": 420,
+    "jenis": "fiksi",
+    "sinopsis": "Perjalanan ke Klan Komet Minor membawa tantangan baru bagi Raib, Seli, dan Ali, yang harus melawan musuh yang tak terduga."
+  },
+  {
+    "id": 10,
+    "judul": "Selena",
+    "image": "https://th.bing.com/th/id/OIP.fo8vmpxu-2vshUT-SnYVgwHaLH?w=186&h=279&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2020,
+    "Halaman": 360,
+    "jenis": "fiksi",
+    "sinopsis": "Mengisahkan masa lalu Selena, mentor Raib, yang penuh intrik, pengorbanan, dan rahasia yang memengaruhi dunia paralel."
+  },
+  {
+    "id": 11,
+    "judul": "Nebula",
+    "image": "https://th.bing.com/th/id/OIP.GULX5gbLsaormtPd04gh-wHaK-?w=186&h=276&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2020,
+    "Halaman": 400,
+    "jenis": "fiksi",
+    "sinopsis": "Cerita mendalam tentang klan Nebula yang penuh teka-teki, membawa Raib dan kawan-kawan menghadapi ujian terbesar mereka."
+  },
+  {
+    "id": 12,
+    "judul": "Si Putih",
+    "image": "https://th.bing.com/th/id/OIP.gPcz5r8jWv-3EoXAGxbIWQAAAA?w=186&h=276&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2021,
+    "Halaman": 370,
+    "jenis": "fiksi",
+    "sinopsis": "Kisah tentang Si Putih, kuda misterius yang memainkan peran penting dalam perjalanan Raib, Seli, dan Ali di dunia paralel."
+  },
+  {
+    "id": 13,
+    "judul": "Aroma Karsa",
+    "image": "https://th.bing.com/th/id/OIP.Dgtx7eiNUXyCY4aOgx0ZOQHaKd?w=186&h=263&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Dee Lestari",
+    "penerbit": "Bentang Pustaka",
+    "Tahun_terbit": 2018,
+    "Halaman": 724,
+    "jenis": "fiksi",
+    "sinopsis": "Sebuah perjalanan epik mencari rahasia terbesar tentang wangi legendaris yang dapat mengubah dunia."
+  },
+  {
+    "id": 14,
+    "judul": "Supernova: Ksatria, Puteri, dan Bintang Jatuh",
+    "image": "https://th.bing.com/th/id/OIP.Y0NH_c5aKn9BdBvKx1-IHQHaMG?w=186&h=304&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Dee Lestari",
+    "penerbit": "Bentang Pustaka",
+    "Tahun_terbit": 2001,
+    "Halaman": 249,
+    "jenis": "fiksi",
+    "sinopsis": "Kisah tentang cinta, kehidupan, dan pencarian makna yang penuh dengan elemen sains dan spiritualitas."
+  },
+  {
+    "id": 15,
+    "judul": "Supernova: Gelombang",
+    "image": "https://th.bing.com/th/id/OIP.eH7sOlJoTboIA5CMFCsRyAAAAA?w=186&h=277&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Dee Lestari",
+    "penerbit": "Bentang Pustaka",
+    "Tahun_terbit": 2014,
+    "Halaman": 484,
+    "jenis": "fiksi",
+    "sinopsis": "Alur penuh aksi dan misteri tentang perjalanan seorang peselancar yang memiliki hubungan dengan dunia supranatural."
+  },
+  {
+    "id": 16,
+    "judul": "Supernova: Partikel",
+    "image": "https://th.bing.com/th/id/OIP.cyIyZbluwdflJ38Nuv2wEwHaLX?w=186&h=286&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Dee Lestari",
+    "penerbit": "Bentang Pustaka",
+    "Tahun_terbit": 2012,
+    "Halaman": 509,
+    "jenis": "fiksi",
+    "sinopsis": "Cerita mendalam tentang pencarian diri, perjalanan spiritual, dan rahasia alam semesta melalui sudut pandang seorang ilmuwan."
+  },
+  {
+    "id": 17,
+    "judul": "Perahu Kertas",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/ebook-previews/31752/100792/1.jpg",
+    "pengarang": "Dee Lestari",
+    "penerbit": "Bentang Pustaka",
+    "Tahun_terbit": 2009,
+    "Halaman": 444,
+    "jenis": "fiksi",
+    "sinopsis": "Cerita tentang cinta, persahabatan, dan impian yang terjalin indah melalui kisah hidup Kugy dan Keenan."
+  },
+  {
+    "id": 18,
+    "judul": "Filosofi Kopi",
+    "image": "https://th.bing.com/th/id/OIP.9AsWZm1xpXVnsWjaUz6AMAAAAA?w=186&h=289&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Dee Lestari",
+    "penerbit": "Bentang Pustaka",
+    "Tahun_terbit": 2006,
+    "Halaman": 120,
+    "jenis": "fiksi",
+    "sinopsis": "Kumpulan cerita pendek yang memadukan aroma kopi dengan filosofi kehidupan, penuh makna dan refleksi."
+  },
+
+  {
+    "id": 19,
+    "judul": "Daun yang Jatuh Tak Pernah Membenci Angin",
+    "image": "https://th.bing.com/th/id/OIP.sC7lVRS90tCQo2leAHBXHAHaK_?w=125&h=186&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2010,
+    "Halaman": 304,
+    "jenis": "fiksi",
+    "sinopsis": "Novel tentang cinta yang tak terbalas, perjuangan hidup, dan menerima kenyataan dengan hati lapang."
+  },
+  {
+    "id": 20,
+    "judul": "Perempuan yang Menangis kepada Bulan Hitam",
+    "image": "https://th.bing.com/th/id/OIP.YAq93ot4qH4Gi9O8BoGyDQHaK-?w=115&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Dian Purnomo",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2021,
+    "Halaman": 328,
+    "jenis": "fiksi",
+    "sinopsis": "Mengangkat tradisi yang masih bertahan di Indonesia, novel ini menggambarkan perjuangan seorang perempuan mencari kebebasan."
+  },
+  {
+    "id": 21,
+    "judul": "Orang-Orang Biasa",
+    "image": "https://cdn.gramedia.com/uploads/items/Orang_Biasa_Baru.JPG",
+    "pengarang": "Andrea Hirata",
+    "penerbit": "Bentang Pustaka",
+    "Tahun_terbit": 2019,
+    "Halaman": 288,
+    "jenis": "fiksi",
+    "sinopsis": "Kisah penuh humor tentang orang-orang biasa yang menghadapi tantangan luar biasa di kehidupan mereka."
+  },
+  {
+    "id": 22,
+    "judul": "Ayah",
+    "image": "https://th.bing.com/th/id/OIP.GwC1EhCQnAdP5yaOgjSUZQHaLr?w=186&h=293&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Andrea Hirata",
+    "penerbit": "Bentang Pustaka",
+    "Tahun_terbit": 2015,
+    "Halaman": 412,
+    "jenis": "fiksi",
+    "sinopsis": "Kisah tentang pengorbanan dan cinta seorang ayah, serta perjalanan hidup seorang anak dalam menemukan jati dirinya."
+  },
+  {
+    "id": 23,
+    "judul": "Padang Bulan",
+    "image": "https://th.bing.com/th/id/OIP.VzYGhiqyzxekZ5xR9QHbHAAAAA?rs=1&pid=ImgDetMain",
+    "pengarang": "Andrea Hirata",
+    "penerbit": "Bentang Pustaka",
+    "Tahun_terbit": 2010,
+    "Halaman": 300,
+    "jenis": "fiksi",
+    "sinopsis": "Petualangan kocak dan menyentuh tentang cinta, persahabatan, dan perjuangan hidup di pedalaman Belitong."
+  },
+  {
+    "id": 24,
+    "judul": "Cinta di Dalam Gelas",
+    "image": "https://i.pinimg.com/originals/ca/9f/a5/ca9fa58700107f015d0aa4564c0513ae.jpg",
+    "pengarang": "Andrea Hirata",
+    "penerbit": "Bentang Pustaka",
+    "Tahun_terbit": 2010,
+    "Halaman": 292,
+    "jenis": "fiksi",
+    "sinopsis": "Kisah lanjutan tentang Enong yang mencoba menggapai mimpi dan cinta di tengah kesulitan hidup."
+  },
+  {
+    "id": 25,
+    "judul": "Rindu",
+    "image": "https://inc.mizanstore.com/aassets/img/com_cart/produk/covPAB-014.jpg",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Gramedia Pustaka Utama",
+    "Tahun_terbit": 2014,
+    "Halaman": 400,
+    "jenis": "fiksi",
+    "sinopsis": "Perjalanan spiritual dan emosional para penumpang kapal haji menuju Mekkah yang penuh cerita."
+  },
+  {
+    "id": 26,
+    "judul": "Hafalan Shalat Delisa",
+    "image": "https://koleksiperpus.jakarta.go.id/dispusip/uploaded_files/sampul_koleksi/original/Monograf/202754.jpeg",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Republika",
+    "Tahun_terbit": 2005,
+    "Halaman": 232,
+    "jenis": "fiksi",
+    "sinopsis": "Kisah seorang anak kecil bernama Delisa yang gigih mempelajari shalat di tengah ujian hidup akibat tsunami."
+  },
+  {
+    "id": 27,
+    "judul": "Negeri di Ujung Tanduk",
+    "image": "https://scoopadm.apps-foundry.com/ebook-covers/42421/image_highres/ID_NUT2018MTH05NUT.jpg",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Republika",
+    "Tahun_terbit": 2013,
+    "Halaman": 344,
+    "jenis": "fiksi",
+    "sinopsis": "Cerita tentang perjuangan seorang detektif dalam mengungkap konspirasi besar yang mengancam negeri."
+  },
+  {
+    "id": 28,
+    "judul": "Tentang Kamu",
+    "image": "https://th.bing.com/th/id/R.8f39ee6b87ea73c3e9589ddb44534b3b?rik=SnV7BpyXCncRdw&riu=http%3a%2f%2fimages.gr-assets.com%2fbooks%2f1475659479l%2f32467509.jpg&ehk=ZW%2bCmta3ev6eNy%2bP%2fcJeWnw3JUzCHilAUAUGkTr4u3I%3d&risl=&pid=ImgRaw&r=0",
+    "pengarang": "Tere Liye",
+    "penerbit": "PT Republika",
+    "Tahun_terbit": 2016,
+    "Halaman": 480,
+    "jenis": "fiksi",
+    "sinopsis": "Seorang pengacara muda yang berusaha mengungkap misteri warisan seorang wanita tua dengan masa lalu penuh rahasia."
+  },
+  {
+    "id": 29,
+    "judul": "Rectoverso",
+    "image": "https://literature.britishcouncil.org/assets/Uploads/_resampled/ResizedImage376561-Dee-lestari-Cover-Buku-Rectoverso.jpg",
+    "pengarang": "Dee Lestari",
+    "penerbit": "Bentang Pustaka",
+    "Tahun_terbit": 2008,
+    "Halaman": 270,
+    "jenis": "fiksi",
+    "sinopsis": "Kumpulan cerita pendek dan puisi tentang cinta dalam berbagai bentuk, dari manis hingga menyakitkan."
+  },
+  {
+    "id": 30,
+    "judul": "Madre",
+    "image": "https://th.bing.com/th/id/OIP.bO4lPPykr2JhQ_3V-k054gAAAA?rs=1&pid=ImgDetMain",
+    "pengarang": "Dee Lestari",
+    "penerbit": "Bentang Pustaka",
+    "Tahun_terbit": 2011,
+    "Halaman": 168,
+    "jenis": "fiksi",
+    "sinopsis": "Kisah seorang pria yang menemukan warisan tak terduga berupa adonan roti legendaris yang mengubah hidupnya."
+  },
+  {
+    "id":31,
+    "judul": "Laskar Pelangi",
+    "image": "https://th.bing.com/th/id/OIP.Ctt7dvydYLCRrnmrFBEPxQHaLw?w=186&h=296&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Andrea Hirata",
+    "penerbit": "Bentang Pustaka",
+    "Tahun_terbit": 2005,
+    "Halaman": 529,
+    "jenis": "fiksi inspiratif",
+    "sinopsis": "Perjuangan 10 anak di Belitung untuk mendapatkan pendidikan meski dalam keterbatasan."
+},
+{
+    "id":32,
+    "judul": "Dilan: Dia adalah Dilanku Tahun 1990",
+    "image": "https://th.bing.com/th/id/OIP.sEfKP4v8fP5_YnavOebTrAHaKs?w=115&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Pidi Baiq",
+    "penerbit": "Pastel Books",
+    "Tahun_terbit": 2014,
+    "Halaman": 348,
+    "jenis": "fiksi romantis",
+    "sinopsis": "Cinta remaja antara Milea dan Dilan, anak motor yang unik."
+},
+{
+    "id":33,
+    "judul": "Harry Potter and the Sorcerer’s Stone",
+    "image": "https://th.bing.com/th/id/OIP.rPTIBOscmtdvxPy3FEWJnQHaKs?w=186&h=268&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "J.K. Rowling",
+    "penerbit": "Bloomsbury",
+    "Tahun_terbit": 1997,
+    "Halaman": 320,
+    "jenis": "fiksi fantasi",
+    "sinopsis": "Harry Potter, seorang penyihir muda, memulai perjalanan ajaibnya di Hogwarts."
+},
+{
+    "id":34,
+    "judul": "The Hunger Games",
+    "image": "https://th.bing.com/th/id/OIP.4cHEn7BQfmW_f04Zj2AX8AHaLY?rs=1&pid=ImgDetMain",
+    "pengarang": "Suzanne Collins",
+    "penerbit": "Scholastic",
+    "Tahun_terbit": 2008,
+    "Halaman": 374,
+    "jenis": "fiksi distopia",
+    "sinopsis": "Katniss Everdeen terjebak dalam permainan mematikan yang diselenggarakan Capitol."
+},
+{
+    "id":35,
+    "judul": "Twilight",
+    "image": "https://th.bing.com/th/id/OIP.ekpv_p0doK_9IgbRQH_F3wHaLL?w=115&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Stephenie Meyer",
+    "penerbit": "Little, Brown",
+    "Tahun_terbit": 2005,
+    "Halaman": 498,
+    "jenis": "fiksi romantis vampir",
+    "sinopsis": "Bella Swan jatuh cinta dengan vampir tampan, Edward Cullen."
+},
+{
+    "id":36,
+    "judul": "Sherlock Holmes: A Study in Scarlet",
+    "image": "https://th.bing.com/th/id/OIP.rd5u8ENLPM-QgEIu0Kh3uQAAAA?w=186&h=284&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Arthur Conan Doyle",
+    "penerbit": "Ward Lock & Co",
+    "Tahun_terbit": 1887,
+    "Halaman": 188,
+    "jenis": "fiksi misteri",
+    "sinopsis": "Kasus pembunuhan pertama yang dipecahkan oleh Sherlock Holmes."
+},
+{
+    "id":37,
+    "judul": "Negeri 5 Menara",
+    "image": "https://th.bing.com/th/id/OIP.H8eXesGCyGmAANmMHlJJpwHaKD?w=147&h=200&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    "pengarang": "Ahmad Fuadi",
+    "penerbit": "Gramedia Pustaka",
+    "Tahun_terbit": 2009,
+    "Halaman": 424,
+    "jenis": "fiksi inspiratif",
+    "sinopsis": "Perjalanan Alif Fikri dan teman-temannya di pesantren, mengejar mimpi setinggi menara."
+}
+]
+
+
+
+
+
+
+
