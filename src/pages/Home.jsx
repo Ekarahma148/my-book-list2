@@ -1,9 +1,9 @@
-import { useContext, useState} from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "../App";
-import { Heart, Bookmark, InfoIcon } from "lucide-react";
+import { Heart, Bookmark, Info } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-function Home() {
+export default function Home() {
   const { filteredBooks, fav, setFavorit } = useContext(CartContext);
   const [liked, setLiked] = useState(() => {
     const savedLikes = localStorage.getItem("likedBooks");
@@ -11,12 +11,37 @@ function Home() {
   });
   const navigate = useNavigate();
 
+  // Pagination State
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
+
+  // Validasi Data untuk Pagination
+  const totalPages = Math.ceil(filteredBooks.length / itemsPerPage);
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredBooks.slice(indexOfFirstItem, indexOfLastItem);
+
+  // Fungsi Pagination
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const handlePreviousPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  // Fungsi Like
   const handleLike = (id) => {
     const updatedLikes = { ...liked, [id]: !liked[id] };
     setLiked(updatedLikes);
     localStorage.setItem("likedBooks", JSON.stringify(updatedLikes));
   };
 
+  // Fungsi Favorit
   const handleFav = (id) => {
     if (fav.some((item) => item.id === id)) {
       // Hapus dari daftar favorit
@@ -32,9 +57,9 @@ function Home() {
 
   return (
     <div>
-      <h1>Book List</h1>
+      <h1 className="title">Book List</h1>
       <div className="book-container">
-        {filteredBooks.map((book) => (
+        {currentItems.map((book) => (
           <div key={book.id} className="book-card">
             <p>{book.judul}</p>
             <img src={book.image} alt={book.judul} />
@@ -46,7 +71,7 @@ function Home() {
                   cursor: "pointer",
                 }}
               />
-              <InfoIcon
+              <Info
                 onClick={() => navigate(`/info/${book.id}`)}
                 style={{ cursor: "pointer" }}
               />
@@ -63,8 +88,17 @@ function Home() {
           </div>
         ))}
       </div>
+      <div className="pages">
+        <button onClick={handlePreviousPage} disabled={currentPage === 1}>
+          Prev
+        </button>
+        <span>
+           {currentPage} of {totalPages}
+        </span>
+        <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+          Next
+        </button>
+      </div>
     </div>
   );
 }
-
-export default Home;

@@ -18,12 +18,12 @@ export default function Footer() {
     document.body.classList.add(`${newTheme}-theme`);
 
     setTheme(newTheme);
-    localStorage.setItem("theme", newTheme); // Simpan ke localStorage
+    localStorage.setItem("theme", newTheme); 
   };
 
   return (
     <div className="footer">
-      <h3>© Hak Cipta</h3>
+      <h3>© Undang-undang Hak Cipta</h3>
       <button onClick={toggleTheme}>
         {theme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}
       </button>

@@ -1,29 +1,27 @@
 import { useState, useEffect } from "react";
-// import { UserContext } from "../components/UserContext";
-// import { useContext } from "react";
+
 function Profile() {
   const savedBooks = JSON.parse(localStorage.getItem("userBooks")) || [];
   const [userBooks, setUserBooks] = useState(savedBooks);
   const [formData, setFormData] = useState(null);
   const [isEdit, setIsEdit] = useState(false);
-  // const { user } = useContext(UserContext);
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-  // Simpan perubahan buku ke LocalStorage
+
   useEffect(() => {
     localStorage.setItem("userBooks", JSON.stringify(userBooks));
   }, [userBooks]);
 
   // Fungsi untuk menambah buku baru
   function handleAdd() {
-    if (!formData) return; // Mencegah penambahan data kosong
+    if (!formData) return; 
     const newId = userBooks.length > 0 ? Math.max(...userBooks.map((b) => b.id)) + 1 : 1;
     setUserBooks([...userBooks, { ...formData, id: newId }]);
-    setFormData(null); // Reset form dan tutup modal
+    setFormData(null); 
   }
   
   function handleUpdate() {
     setUserBooks(userBooks.map((b) => (b.id === formData.id ? formData : b)));
-    setFormData(null); // Reset form dan tutup modal
+    setFormData(null); 
     setIsEdit(false);
   }
   
@@ -37,22 +35,19 @@ function Profile() {
   return (
     <div className="container-page">
       <h1 className="title">Halaman Profil</h1>
-      <p>Username: {currentUser?.username}</p>     
-      {/* Form Tambah/Edit */}
-
       {formData && (
         <div
     className="form-container"
     onClick={(e) => {
       if (e.target.className === "form-container") {
-        setFormData(null); // Tutup modal jika klik di luar form
+        setFormData(null); 
       }
     }}
   >     
      <form
   className="form"
   onSubmit={(e) => {
-    e.preventDefault(); // Penting untuk mencegah reload halaman
+    e.preventDefault(); 
     isEdit ? handleUpdate() : handleAdd();
   }}
 >
@@ -77,12 +72,12 @@ function Profile() {
               />
           </label>
           <label>
-            Penerbit:
+            Sinopsis:
             <input
               type="text"
               className="form-input"
-              value={formData.penerbit}
-              onChange={(e) => setFormData({ ...formData, penerbit: e.target.value })}
+              value={formData.sinopsis}
+              onChange={(e) => setFormData({ ...formData, sinopsis: e.target.value })}
               required
               />
           </label>
@@ -125,7 +120,6 @@ function Profile() {
       </div>
       )}
 
-      {/* Daftar Buku */}
       <div className="book-container">
         {userBooks.length > 0 ? (
           userBooks.map((b) => (
@@ -134,7 +128,7 @@ function Profile() {
               <div className="book-details">
               <p>Judul: {b.judul}</p>
               <p>Pengarang: {b.pengarang}</p>
-              <p>Penerbit: {b.penerbit}</p>
+              <p>Sinopsis: {b.sinopsis}</p>
               <p>Tahun: {b.tahun}</p>
               <p>Halaman: {b.halaman}</p>
               <button
@@ -151,12 +145,12 @@ function Profile() {
             </div>
           ))
         ) : (
-          <p>Belum ada buku.</p>
+          <h2>{currentUser?.username} Belum Membuat Buku.</h2>
         )}
       </div>
           <button
            onClick={() => {
-             setFormData({ judul: "", pengarang: "", penerbit: "", tahun: "", halaman: "", image: "" });
+             setFormData({ judul: "", pengarang: "", sinopsis: "", tahun: "", halaman: "", image: "" });
              setIsEdit(false);
            }}
          >

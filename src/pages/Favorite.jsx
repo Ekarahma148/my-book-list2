@@ -7,6 +7,7 @@ function Favorites() {
   return (
     <div className="container-page">
       <h1 className="title">Daftar Favorit</h1>
+      <div className="book-container">
       {fav.length > 0 ? (
         fav.map((p) => (
           <div key={p.id} className="book-card">
@@ -15,8 +16,9 @@ function Favorites() {
           </div>
         ))
       ) : (
-        <p>Tidak ada buku favorit.</p>
+        <h2>Tidak ada buku favorit.</h2>
       )}
+      </div>
     </div>
   );
 }

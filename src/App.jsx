@@ -10,16 +10,18 @@ export default function App() {
   const [fav, setFavorit] = useState(savedFavorites);
   const [books, setBooks] = useState([]);
   const [filteredBooks, setFilteredBooks] = useState([]);
-  const [sortOption, setSortOption] = useState("id");
+  const [search, setSearch] = useState("");
+  const [sortOrder, setSortOrder] = useState("id-asc");
 
   // Simpan favorit ke LocalStorage
   useEffect(() => {
     if (Array.isArray(fav)) {
-        localStorage.setItem("favorites", JSON.stringify(fav)); // Simpan ke LocalStorage
+      localStorage.setItem("favorites", JSON.stringify(fav));
     } else {
-        console.error("Favorites is not an array");
+      console.error("Favorites is not an array");
     }
-}, [fav]);
+  }, [fav]);
+
   // Fetch books saat pertama kali aplikasi dimuat
   useEffect(() => {
     const savedBooks = JSON.parse(localStorage.getItem("book"));
@@ -37,37 +39,42 @@ export default function App() {
     }
   }, []);
 
-  // Fungsi pencarian
-  const handleSearch = (term) => {
-    const lowerCaseTerm = term.toLowerCase();
-    const filtered = books.filter(
+  // Fungsi untuk menangani pencarian dan pengurutan
+  const updateFilteredBooks = () => {
+    const lowerCaseSearch = search.toLowerCase();
+
+    let updatedBooks = books.filter(
       (book) =>
-        book.judul.toLowerCase().includes(lowerCaseTerm) ||
-        book.pengarang.toLowerCase().includes(lowerCaseTerm)
+        book.judul.toLowerCase().includes(lowerCaseSearch) ||
+        book.pengarang.toLowerCase().includes(lowerCaseSearch)
     );
-    setFilteredBooks(filtered);
+
+    if (sortOrder === "id-asc") {
+      updatedBooks.sort((a, b) => a.id - b.id);
+    } else if (sortOrder === "judul-asc") {
+      updatedBooks.sort((a, b) => a.judul.localeCompare(b.judul));
+    } else if (sortOrder === "judul-desc") {
+      updatedBooks.sort((a, b) => b.judul.localeCompare(a.judul));
+    } else if (sortOrder === "pengarang-asc") {
+      updatedBooks.sort((a, b) => a.pengarang.localeCompare(b.pengarang));
+    }
+
+    setFilteredBooks(updatedBooks);
   };
 
-  // Fungsi pengurutan
-  const handleSort = (option) => {
-    setSortOption(option);
-    const sorted = [...filteredBooks].sort((a, b) => {
-      if (a[option] < b[option]) return -1;
-      if (a[option] > b[option]) return 1;
-      return 0;
-    });
-    setFilteredBooks(sorted);
-  };
+  // Update buku yang difilter saat `search` atau `sortOrder` berubah
+  useEffect(() => {
+    updateFilteredBooks();
+  }, [search, sortOrder, books]);
 
   return (
     <CartContext.Provider
       value={{
         fav,
         setFavorit,
-        books,
         filteredBooks,
-        handleSearch,
-        handleSort,
+        setSearch,
+        setSortOrder,
       }}
     >
       <Header />

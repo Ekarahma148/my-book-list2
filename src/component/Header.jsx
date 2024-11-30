@@ -1,14 +1,13 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../App";
 import { Link, useNavigate } from "react-router-dom";
-import { Bookmark, User2, Home } from "lucide-react";
-import { Search } from "lucide-react";
+import { Bookmark, User2, Home, Search } from "lucide-react";
+import { Newspaper } from "lucide-react";
 
 export default function Header() {
-  const { fav, handleSearch, handleSort } = useContext(CartContext);
-  const [searchTerm, setSearchTerm] = useState("");
-  const navigate = useNavigate();
+  const { fav, setSearch, setSortOrder } = useContext(CartContext);
   const [searchVisible, setSearchVisible] = useState(false);
+  const navigate = useNavigate();
 
   const handleLogout = () => {
     localStorage.removeItem("isLoggedIn");
@@ -34,7 +33,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about"><Newspaper/></Link>
           </li>
           <li>
             <Link to="/favorites">
@@ -56,27 +55,28 @@ export default function Header() {
               <input
                 type="text"
                 placeholder="Search..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
+                onChange={(e) => setSearch(e.target.value)}
               />
-              <button
-                onClick={() => {
-                  handleSearch(searchTerm);
-                  toggleSearch();
-                }}
-              >
-                Cari
-              </button>
+              <button onClick={toggleSearch}>Cari</button>
             </div>
           ) : (
             <button className="search-toggle" onClick={toggleSearch}>
               <Search />
             </button>
           )}
+          <select
+            className="sort-select"
+            onChange={(e) => setSortOrder(e.target.value)}
+          >
+            <option value="id-asc">ID</option>
+            <option value="judul-asc">Asc</option>
+            <option value="judul-desc">Desc</option>
+            <option value="pengarang-asc">Author</option>
+          </select>
+          <button className="logout-btn" onClick={handleLogout}>
+            Logout
+          </button>
         </div>
-        <button className="logout-btn" onClick={handleLogout}>
-          Logout
-        </button>
       </div>
     </header>
   );
